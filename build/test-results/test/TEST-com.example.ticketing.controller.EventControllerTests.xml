@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.ticketing.controller.EventControllerTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-01-02T12:34:21.676Z" hostname="Akhmads-MacBook-Pro.local" time="0.177">
+  <properties/>
+  <testcase name="Positive Case: search event" classname="com.example.ticketing.controller.EventControllerTests" time="0.169"/>
+  <testcase name="Positive Case: get list ticket" classname="com.example.ticketing.controller.EventControllerTests" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

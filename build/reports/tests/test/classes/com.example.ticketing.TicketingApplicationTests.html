@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.033s</div>
+<div class="counter">0.523s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,7 +79,7 @@
 </thead>
 <tr>
 <td class="success">contextLoads()</td>
-<td class="success">0.033s</td>
+<td class="success">0.523s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -87,8 +87,8 @@
 <div class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre id="class-stdout">14:28:33.989 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.ticketing.TicketingApplicationTests]: TicketingApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-14:28:34.129 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.ticketing.TicketingApplication for test class com.example.ticketing.TicketingApplicationTests
+<pre id="class-stdout">19:34:05.610 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.ticketing.TicketingApplicationTests]: TicketingApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+19:34:05.894 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.ticketing.TicketingApplication for test class com.example.ticketing.TicketingApplicationTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -99,7 +99,7 @@
 
  :: Spring Boot ::                (v4.0.1)
 
-2026-01-02T14:28:35.095+07:00  WARN 12653 --- [ticketing] [    Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+2026-01-02T19:34:06.654+07:00  WARN 31828 --- [ticketing] [    Test worker] ory$DuplicateJsonObjectContextCustomizer : 
 
 Found multiple occurrences of org.json.JSONObject on the class path:
 
@@ -108,28 +108,28 @@ Found multiple occurrences of org.json.JSONObject on the class path:
 
 You may wish to exclude one of them to ensure predictable runtime behavior
 
-2026-01-02T14:28:35.125+07:00  INFO 12653 --- [ticketing] [    Test worker] c.e.ticketing.TicketingApplicationTests  : Starting TicketingApplicationTests using Java 25.0.1 with PID 12653 (started by masterfoe in /Users/masterfoe/IdeaProjects/concert-ticketing)
-2026-01-02T14:28:35.128+07:00  INFO 12653 --- [ticketing] [    Test worker] c.e.ticketing.TicketingApplicationTests  : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2026-01-02T14:28:36.354+07:00  INFO 12653 --- [ticketing] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2026-01-02T14:28:36.360+07:00  INFO 12653 --- [ticketing] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-01-02T14:28:36.618+07:00  INFO 12653 --- [ticketing] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 236 ms. Found 6 JPA repository interfaces.
-2026-01-02T14:28:36.937+07:00  INFO 12653 --- [ticketing] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2026-01-02T14:28:36.939+07:00  INFO 12653 --- [ticketing] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2026-01-02T14:28:36.984+07:00  INFO 12653 --- [ticketing] [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.ticketing.repository.EventQueueRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2026-01-02T14:28:36.985+07:00  INFO 12653 --- [ticketing] [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.ticketing.repository.EventRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2026-01-02T14:28:36.986+07:00  INFO 12653 --- [ticketing] [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.ticketing.repository.EventTransactionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2026-01-02T14:28:36.986+07:00  INFO 12653 --- [ticketing] [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.ticketing.repository.TicketRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2026-01-02T14:28:36.986+07:00  INFO 12653 --- [ticketing] [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.ticketing.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2026-01-02T14:28:36.988+07:00  INFO 12653 --- [ticketing] [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.ticketing.repository.UserTicketRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2026-01-02T14:28:36.989+07:00  INFO 12653 --- [ticketing] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 0 Redis repository interfaces.
-2026-01-02T14:28:37.752+07:00  INFO 12653 --- [ticketing] [    Test worker] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-01-02T14:28:37.799+07:00  INFO 12653 --- [ticketing] [    Test worker] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
-2026-01-02T14:28:38.147+07:00  INFO 12653 --- [ticketing] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-01-02T14:28:38.180+07:00  INFO 12653 --- [ticketing] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-01-02T14:28:38.861+07:00  INFO 12653 --- [ticketing] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6715a6da
-2026-01-02T14:28:38.870+07:00  INFO 12653 --- [ticketing] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-01-02T14:28:38.954+07:00  WARN 12653 --- [ticketing] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-01-02T14:28:39.045+07:00  INFO 12653 --- [ticketing] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2026-01-02T19:34:06.667+07:00  INFO 31828 --- [ticketing] [    Test worker] c.e.ticketing.TicketingApplicationTests  : Starting TicketingApplicationTests using Java 25.0.1 with PID 31828 (started by masterfoe in /Users/masterfoe/IdeaProjects/concert-ticketing)
+2026-01-02T19:34:06.674+07:00  INFO 31828 --- [ticketing] [    Test worker] c.e.ticketing.TicketingApplicationTests  : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2026-01-02T19:34:08.495+07:00  INFO 31828 --- [ticketing] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-01-02T19:34:08.499+07:00  INFO 31828 --- [ticketing] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-02T19:34:08.720+07:00  INFO 31828 --- [ticketing] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 205 ms. Found 6 JPA repository interfaces.
+2026-01-02T19:34:09.115+07:00  INFO 31828 --- [ticketing] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-01-02T19:34:09.116+07:00  INFO 31828 --- [ticketing] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-01-02T19:34:09.172+07:00  INFO 31828 --- [ticketing] [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.ticketing.repository.EventQueueRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-01-02T19:34:09.173+07:00  INFO 31828 --- [ticketing] [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.ticketing.repository.EventRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-01-02T19:34:09.173+07:00  INFO 31828 --- [ticketing] [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.ticketing.repository.EventTransactionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-01-02T19:34:09.174+07:00  INFO 31828 --- [ticketing] [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.ticketing.repository.TicketRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-01-02T19:34:09.175+07:00  INFO 31828 --- [ticketing] [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.ticketing.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-01-02T19:34:09.176+07:00  INFO 31828 --- [ticketing] [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.ticketing.repository.UserTicketRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-01-02T19:34:09.177+07:00  INFO 31828 --- [ticketing] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 0 Redis repository interfaces.
+2026-01-02T19:34:10.723+07:00  INFO 31828 --- [ticketing] [    Test worker] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-01-02T19:34:10.801+07:00  INFO 31828 --- [ticketing] [    Test worker] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
+2026-01-02T19:34:11.416+07:00  INFO 31828 --- [ticketing] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-02T19:34:11.454+07:00  INFO 31828 --- [ticketing] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-01-02T19:34:12.094+07:00  INFO 31828 --- [ticketing] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1c966488
+2026-01-02T19:34:12.099+07:00  INFO 31828 --- [ticketing] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-01-02T19:34:12.183+07:00  WARN 31828 --- [ticketing] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-02T19:34:12.243+07:00  INFO 31828 --- [ticketing] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [jdbc:mysql://localhost:3306/ticketing]
 	Database driver: MySQL Connector/J
 	Database dialect: MySQLDialect
@@ -141,11 +141,11 @@ You may wish to exclude one of them to ensure predictable runtime behavior
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-01-02T14:28:40.462+07:00  INFO 12653 --- [ticketing] [    Test worker] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-01-02T14:28:40.713+07:00  INFO 12653 --- [ticketing] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-01-02T14:28:41.071+07:00  INFO 12653 --- [ticketing] [    Test worker] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-01-02T14:28:42.956+07:00  WARN 12653 --- [ticketing] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-01-02T14:28:45.444+07:00  INFO 12653 --- [ticketing] [    Test worker] c.e.ticketing.TicketingApplicationTests  : Started TicketingApplicationTests in 10.838 seconds (process running for 14.342)
+2026-01-02T19:34:14.377+07:00  INFO 31828 --- [ticketing] [    Test worker] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-02T19:34:14.570+07:00  INFO 31828 --- [ticketing] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-02T19:34:14.969+07:00  INFO 31828 --- [ticketing] [    Test worker] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-02T19:34:17.603+07:00  WARN 31828 --- [ticketing] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-02T19:34:21.020+07:00  INFO 31828 --- [ticketing] [    Test worker] c.e.ticketing.TicketingApplicationTests  : Started TicketingApplicationTests in 14.862 seconds (process running for 17.973)
 </pre>
 <button class="clipboard-copy-btn" aria-label="Copy to clipboard" data-copy-element-id="class-stdout">Copy</button>
 </span>
@@ -158,7 +158,7 @@ You may wish to exclude one of them to ensure predictable runtime behavior
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="https://www.gradle.org">Gradle 9.2.1</a> at 2 Jan 2026, 14.28.45</p>
+<a href="https://www.gradle.org">Gradle 9.2.1</a> at 2 Jan 2026, 19.34.22</p>
 </div>
 </div>
 </body>

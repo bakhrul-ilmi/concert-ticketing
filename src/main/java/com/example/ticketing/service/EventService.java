@@ -25,8 +25,6 @@ public class EventService {
     }
 
     public List<Event> GetActiveEvents(String searchKey, LocalDateTime time) {
-        System.out.println(searchKey);
-        System.out.println(time);
         return eventRepository.searchActiveEvent(searchKey, time);
     }
 
