@@ -1,0 +1,79 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '4.0.1'
+    id 'io.spring.dependency-management' version '1.1.7'
+    id 'org.liquibase.gradle' version '2.2.2' // Use the latest version of the Liquibase Gradle plugin
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+description = 'ticketing'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(25)
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    // database
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    runtimeOnly 'com.mysql:mysql-connector-j'
+
+    // redis 
+    implementation 'redis.clients:jedis:7.2.0'
+    implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+
+    // netty for macOS with M1 chip
+    implementation 'io.netty:netty-all'
+    implementation(group: "io.netty", name: "netty-resolver-dns-native-macos", version: "4.1.72.Final", classifier: "osx-aarch_64")
+
+    // lombok
+    compileOnly("org.projectlombok:lombok:1.18.42")
+    annotationProcessor("org.projectlombok:lombok:1.18.42")
+
+    // json
+//    implementation 'org.json:json:20211205'
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.20.1'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.20.1'
+//    implementation 'com.fasterxml.jackson.core:jackson-annotations:2.13.1'
+//    implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.13.1'
+//    implementation 'com.google.code.gson:gson:2.9.0'
+
+    // testing
+    testImplementation 'org.mockito:mockito-core:4.3.1'
+    testImplementation('org.springframework.boot:spring-boot-starter-test') {
+        exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+    }
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.springframework.security:spring-security-test'
+    testImplementation 'io.projectreactor:reactor-test'
+    annotationProcessor 'org.projectlombok:lombok'
+
+    // junit for testing
+    testImplementation 'org.springframework.boot:spring-boot-starter-data-redis-test'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+liquibase {
+    activities {
+        main {
+            changeLogFile 'src/main/resources/db/changelog/db.changelog-master.xml'
+            url 'jdbc:mysql://localhost:3306/ticketing'
+            username 'username'
+            password 'password'
+        }
+    }
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
